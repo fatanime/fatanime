@@ -8,11 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
 		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="img/logo/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/logo/favicon-16x16.png">
+		<link rel="manifest" href="img/logo/site.webmanifest">
+		<link rel="mask-icon" href="img/logo/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
         <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">
 	   
-		<!-- Bootstrap CSS
+		<!-- Bootstrap CSS, Fancybox CSS
 		============================================ -->		
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
 		<!-- et-line-fonts
 		============================================ -->
         <link rel="stylesheet" href="css/et-line-fonts.css">
@@ -65,9 +73,6 @@
 <!-- /Yandex.Metrika counter -->
     </head>
     <body>
-        <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         <!-- Add your site or application content here -->
         <div class="wrapper">
             <!-- Header Area
@@ -82,7 +87,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                               </button>
-                              <a class="navbar-brand logo" href="index.html">FA&GOG</a>
+                              <a class="navbar-brand logo" href="https://vk.com/fatanime" target="_blank" title="Наша группа в ВК">FAFG</a>
                             </div>
                             <div class="main-menu float-right collapse navbar-collapse" id="main-menu">
                                 <nav>
@@ -101,7 +106,7 @@
                     </div>
                 </div>
             </header>
-            <!-- Home Area
+            <!-- СЛАЙДЕР
             ============================================ -->
             <div id="home-area" class="slider-area">
                 <div class="slider-active">
@@ -114,7 +119,7 @@
                         </div>
                     </div>
                     <div class="single-slider">
-                        <div class="slide-bg height-100vh" style="background-image: url(img/slider/2.jpg);"></div>
+                        <div class="slide-bg height-100vh" style="background-image: url(img/slider/2.png);"></div>
                         <div class="slider-title">
                             <h2>Тысячи артов</h2>
                             <p>для любителей всех размеров и форм</p>
@@ -124,7 +129,7 @@
                     <div class="single-slider">
                         <div class="slide-bg height-100vh" style="background-image: url(img/slider/3.jpg);"></div>
                         <div class="slider-title">
-                            <h2>Пять лет</h2>
+                            <h2>Шесть лет</h2>
                             <p>мы публикуем для вас отборные работы</p>
                             <a target="_blank" href="https://vk.com/fatanime">Смотреть</a>
                         </div>
@@ -137,35 +142,36 @@
                         <div class="col-md-8 col-sm-12">
                             <div class="about-rightsidebar">
                                 <h3 style="font-size: 50px;">ИДЕЯ СОЗДАНИЯ</h3>
-                                <p style="font-size: 20px;">Более  пяти лет назад 31 января была создана группа FAT Anime & Girls Oficial Fan Group 16+ ™ . <br>Тогда, я хотел показать обитателям Вконтакте, что существует и иная красота - выраженная в полноте, изящных изгибах тела, большой груди и попе, свисающем животе. <br>По началу мало людей заходило в группу, но затем начался активный приток людей. Они были разного возраста, из разных стран и разного пола. Они прочувствовали заложенную мной идею и теперь даже некоторые продолжают ее, создавая свои группы и слайдшоу. <br>Каждый год наши ряды растут, поэтому если вы тоже тайный поклонник больших форм - присоединяйтесь к нам!</p>
+                                <p class="normal-text">Более  пяти лет назад, в 2015 году 31 января была создана группа Fat Anime Fan Group 16+ ™ .</p><p class="normal-text">Тогда в Вконтакте не было групп, которые бы показали во всеуслышание, что существует и иная красота - выраженная в полноте.</p> <p class="normal-text">По началу мало кто обращал внимание на подобный контент, но затем начался активный приток людей. Все они были разного возраста, из разных стран и разного пола и прочувствовали заложенную идею.</p><p class="normal-text">Каждый год наши ряды растут, поэтому если вы тоже тайный поклонник больших форм - присоединяйтесь к нам!</p>
+
                                 <div class="about-bottom">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="progress">
-                                               <div class="lead">Количество постов</div>
-                                                <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.2s" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                                    <span>>16K</span>
+                                               <div class="lead statistic-label">Количество постов</div>
+                                                <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.2s" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                                    <span>>19K</span>
                                                 </div>
                                             </div>
                                             <div class="progress">
-                                               <div class="lead">Число участников</div>
-                                                <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.2s" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
-                                                    <span>>4.5K</span>
+                                               <div class="lead statistic-label">Число участников</div>
+                                                <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.2s" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                    <span>>5K</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="all-progress">
                                                 <div class="progress">
-                                                   <div class="lead">Количество фотоальбомов</div>
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.2s" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                                        <span>>320</span>
+                                                   <div class="lead statistic-label">Количество фотоальбомов</div>
+                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.2s" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                                        <span>>370</span>
                                                     </div>
                                                 </div>
                                                 <div class="progress">
-                                                   <div class="lead">Количество артов в альбомах</div>
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.2s" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                                        <span>>8K</span>
+                                                   <div class="lead statistic-label">Количество артов в альбомах</div>
+                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.2s" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                                        <span>>10K</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -188,7 +194,7 @@
                         <div class="col-md-12 text-center">
                             <div class="section-title">
                                 <h2>Особенности</h2>
-                                <p style="font-size: 16px;">В вконтакте полным полно групп с похожей тематикой, но чем мы лучше них?</p>
+                                <p style="font-size: 16px;">В вконтакте стало много групп с похожей тематикой, но чем мы лучше них?</p>
                             </div>
                         </div>
                     </div>
@@ -204,14 +210,14 @@
                             <div class="single-service white-bg">
                                 <i class="icon-pencil "></i>
                                 <h3>Творческая среда</h3>
-                                <p>Если вы хотите попробовать нарисовать полную девушку, то наша группа поможет вам! </p>
+                                <p>Если вы хотите попробовать нарисовать полную девушку, то наша группа поможет вам начать путь художника!</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12 text-center">
                             <div class="single-service white-bg">
                                 <i class="icon-camera"></i>
                                 <h3>Пополняемые альбомы</h3>
-                                <p>Мы следим за новинками и стараемся регулярно обновлять альбомы с контентом. </p>
+                                <p>Мы следим за новинками и стараемся регулярно обновлять альбомы с интересными новинками. </p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12 text-center">
@@ -225,454 +231,254 @@
                             <div class="single-service white-bg">
                                 <i class="icon-gears "></i>
                                 <h3>Чат бот</h3>
-                                <p>У нашей группы есть бот, который поможет вам проникнутся творчеством отдельных художников еще глубже. </p>
+                                <p>У нашей группы есть бот, который поможет вам получить особые подборки артов в зависимости от ваших вкусов. </p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12 text-center">
                             <div class="single-service white-bg">
                                 <i class="icon-briefcase "></i>
                                 <h3>Собственный контент</h3>
-                                <p>В отличие от остальных групп мы публикуем и собственные арты от наших художников, создаем слайдшоу и многое другое. </p>
+                                <p>В отличие от остальных групп мы публикуем и арты от наших художников, создаем красочные слайдшоу и многое другое. </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="portfolio-area" class="portfolio-area pt-90 pb-70">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <div class="section-title">
-                                <h2>Галерея</h2>
-                                <p style="font-size: 16px;">Здесь вы можете увидеть избранные арты художников, которые с нами сотрудничают или сотрудничали.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="portfolio-menu text-center mb-50">
-                        <button class="active" data-filter="*">ВСЕ</button>
-                        <button data-filter=".cat1">Mamoru45</button>
-                        <button data-filter=".cat2">Vitlut</button>
-                        <button data-filter=".cat3">SnowyBunny</button>
-                        <button data-filter=".cat4">PreSi</button>
-                        <button data-filter=".cat5">Sidven</button>
-                    </div>			
-                    <div class="row">
-						<div class="grid">
 
-							<!-- Mamoru45-->
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat1">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/mamoru45/ma1.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/mamoru45/ma1zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/mamoru45" target="_blank">Noname</a></h3>
-										</div>	
-									</div>							
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/mamoru45/ma2.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/mamoru45/ma2zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/mamoru45" target="_blank">Guu in underwear</a></h3>
-										</div>	
-									</div>							
-								</div>
-							</div>
+    <section class="portfolio" id="portfolio-area">
+    <div class="container-fluid">
+        <div class="row">
 
-							<div class="col-md-6 col-sm-6 col-xs-12 grid-item cat1">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/mamoru45/ma3zoom.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/mamoru45/ma3zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/mamoru45" target="_blank">Hinata</a></h3>
-											
-										</div>	
-									</div>	
-								</div>
-							</div>
-
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat1">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/mamoru45/ma4.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/mamoru45/ma4zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/mamoru45" target="_blank">Art-Trade 4</a></h3>
-											</div>	
-									</div>	
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/mamoru45/ma5.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/mamoru45/ma5zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/mamoru45"target="_blank">Cassie Cassie Cassie</a></h3>
-										</div>	
-									</div>							
-								</div>
-							</div>
-
-							<!-- Vitlut-->
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat2 cat2">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/vitlut/vit1.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/vitlut/vit1zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/vitlut" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/vitlut/vit2.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/vitlut/vit2zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/vitlut" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div>						
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12 grid-item cat2">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/vitlut/vit6.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/vitlut/vit6.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/vitlut" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat2 cat2">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/vitlut/vit4.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/vitlut/vit4zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/vitlut" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/vitlut/vit8.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/vitlut/vit8zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/vitlut" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div>						
-							</div>
-
-							<!-- SnowyBunny-->
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat3">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/snowybunny/1.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/snowybunny/1zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/snowybunny" target="_blank">booty</a></h3>
-										</div>	
-									</div>	
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/snowybunny/2.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/snowybunny/2zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/snowybunny" target="_blank">Soft</a></h3>
-										</div>	
-									</div>	
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 col-xs-12 grid-item cat3">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/snowybunny/3.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/snowybunny/3.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/snowybunny" target="_blank">Rosmari and Tjuta</a></h3>
-										</div>	
-									</div>	
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat3">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/snowybunny/4.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/snowybunny/4zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/snowybunny" target="_blank">Judy Hopps</a></h3>
-										</div>	
-									</div>	
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/snowybunny/5.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/snowybunny/5zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://www.deviantart.com/snowybunny" target="_blank">Tjuta</a></h3>
-										</div>	
-									</div>	
-								</div>
-							</div>
-							<!-- PreSi-->
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat4">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/PreSi/1.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Presi/1zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/club187702477" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/Presi/2zoom.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Presi/2zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/club187702477" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 col-xs-12 grid-item cat4">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/PreSi/3.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Presi/3zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/club187702477" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div></div>
-								<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat4">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/PreSi/4zoom.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Presi/4.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/club187702477" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div></div>
-
-							<!-- Sidven-->
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat5">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/Sidven/1.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Sidven/1zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/id243695246" target="_blank">Мелисса на море</a></h3>
-										</div>	
-									</div>	
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/Sidven/2.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Sidven/2zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/id243695246" target="_blank">Мелисса День Святого Патрика</a></h3>
-										</div>	
-									</div>	
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 col-xs-12 grid-item cat5">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/Sidven/3.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Sidven/3.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/id243695246" target="_blank">Дженифер</a></h3>
-										</div>	
-									</div>	
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6 col-xs-12 grid-item cat5">
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/Sidven/4.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Sidven/4zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/id243695246" target="_blank">Noname</a></h3>
-										</div>	
-									</div>	
-								</div>
-								<div class="portfolio hover-style">
-									<div class="portfolio-img">
-										<img src="img/gallery/Sidven/5.jpg" alt="" />
-										<div class="portfolio-view">
-											<a class="img-poppu" href="img/gallery/Sidven/5zoom.jpg">
-												<span class="plus"></span>
-											</a>								
-										</div>									
-										<div class="portfolio-title title-style-1">
-											<h3><a href="https://vk.com/id243695246" target="_blank">Kip, Kat, Islie Funart</a></h3>
-										</div>	
-									</div>	
-								</div>
-							</div><!--END Categories-->
-						</div>		
-					</div>
+            <div class="col-md-12 text-center">
+                <div class="section-title">
+                    <h2>Галерея</h2>
+                        <p style="font-size: 16px;">Здесь вы можете увидеть избранные арты художников, которые с нами сотрудничают или сотрудничали.</p>
                 </div>
             </div>
-            <!--<div class="project-count-area gray-bg ptb-100">
-                <div class="container">
-                    <div class="col-md-3 col-sm-3">
-                        <div class="single-count">
-                            <div class="count-icon">
-                                <span class="icon-briefcase"></span>
-                            </div>
-                            <div class="count-title">
-                                <h2 class="count">360</h2>
-                                <span>project done</span>
-                            </div>
-                        </div>
+
+            <div align="center">
+                <button class="filter-button" data-filter="all"><b>ВСЕ</b></button>
+                <button class="filter-button" data-filter="FruglyBustard">FruglyBustard</button>
+                <button class="filter-button" data-filter="Vitlut">Vitlut</button>
+                <button class="filter-button" data-filter="SnowyBunny">SnowyBunny</button>
+                <button class="filter-button" data-filter="Sidven">Sidven</button>
+                <button class="filter-button" data-filter="TakoYasi">TakoYasi</button>
+                <button class="filter-button" data-filter="azzka245">azzka245</button>
+            </div>
+            
+            <br/>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter FruglyBustard">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-38.userapi.com/impg/Ec9qyZKNqhCAzSYyXPj69-C4-QtIhufxwkWbCA/4d0dtvyX8J0.jpg?size=1280x960&quality=96&sign=8b8e04359bd5b83fc403cc68e2762696&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-38.userapi.com/impg/Ec9qyZKNqhCAzSYyXPj69-C4-QtIhufxwkWbCA/4d0dtvyX8J0.jpg?size=1280x960&quality=96&sign=8b8e04359bd5b83fc403cc68e2762696&type=album" />
+                    <div class='img-info'>
                     </div>
-                    <div class="col-md-3 col-sm-3">
-                        <div class="single-count">
-                            <div class="count-icon">
-                                <span class="icon-wine"></span>
-                            </div>
-                            <div class="count-title">
-                                <h2 class="count">690</h2>
-                                <span>cups of coffee</span>
-                            </div>
-                        </div>
+                    <!-- <div class='img-info'>
+                        <h4>Image Title 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div> -->
+                </a>
+            </div>
+
+             <div class="gallery_product col-sm-3 col-xs-12 filter Vitlut">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-62.userapi.com/impg/KxITjhVuLZ8kv70yajBkAQNLTB0e0-E6wMWfNA/2K0MY7kCU1s.jpg?size=1280x1068&quality=96&proxy=1&sign=7d248adc069b8eea2c831b523dcc15a3&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-62.userapi.com/impg/KxITjhVuLZ8kv70yajBkAQNLTB0e0-E6wMWfNA/2K0MY7kCU1s.jpg?size=1280x1068&quality=96&proxy=1&sign=7d248adc069b8eea2c831b523dcc15a3&type=album" />
+                    <div class='img-info'>
                     </div>
-                    <div class="col-md-3 col-sm-3">
-                        <div class="single-count">
-                            <div class="count-icon">
-                                <span class="icon-lightbulb"></span>
-                            </div>
-                            <div class="count-title">
-                                <h2 class="count">420</h2>
-                                <span>branding</span>
-                            </div>
-                        </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter SnowyBunny">
+                 <a class="fancybox" rel="ligthbox" href="https://sun9-14.userapi.com/impg/c856132/v856132194/22dbdf/hb5xcKHsExw.jpg?size=1024x646&quality=96&proxy=1&sign=2bca5403fcea643a46abf082654f9e0c&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-14.userapi.com/impg/c856132/v856132194/22dbdf/hb5xcKHsExw.jpg?size=1024x646&quality=96&proxy=1&sign=2bca5403fcea643a46abf082654f9e0c&type=album" />
+                    <div class='img-info'>
                     </div>
-                    <div class="col-md-3 col-sm-3">
-                        <div class="single-count res-count">
-                            <div class="count-icon">
-                                <span class="icon-happy"></span>
-                            </div>
-                            <div class="count-title">
-                                <h2 class="count">100</h2>
-                                <span>happy clients</span>
-                            </div>
-                        </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter Sidven">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-53.userapi.com/impf/c857524/v857524090/86496/CY0eldgAays.jpg?size=1280x960&quality=96&sign=2ff9eb06eddf1b1cc59625edb68867f0&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-53.userapi.com/impf/c857524/v857524090/86496/CY0eldgAays.jpg?size=1280x960&quality=96&sign=2ff9eb06eddf1b1cc59625edb68867f0&type=album" />
+                    <div class='img-info'>
                     </div>
-                </div>
-            </div>-->
+                </a>
+            </div>
+
+             <div class="gallery_product col-sm-3 col-xs-12 filter TakoYasi">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-38.userapi.com/impg/c850416/v850416691/1b239c/yaSOtipRdDo.jpg?size=1280x729&quality=96&sign=96e1be68cc7889e808c479a7cbbf15a4&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-38.userapi.com/impg/c850416/v850416691/1b239c/yaSOtipRdDo.jpg?size=1280x729&quality=96&sign=96e1be68cc7889e808c479a7cbbf15a4&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+             <div class="gallery_product col-sm-3 col-xs-12 filter azzka245">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-17.userapi.com/impg/JEh1IuPNvOLmCqkeyGWP1U8MO05bYrIVLy9SDQ/xyRixZCmegc.jpg?size=1200x901&quality=96&proxy=1&sign=cd4cedf1ab36ea81841d1c95077630ab&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-17.userapi.com/impg/JEh1IuPNvOLmCqkeyGWP1U8MO05bYrIVLy9SDQ/xyRixZCmegc.jpg?size=1200x901&quality=96&proxy=1&sign=cd4cedf1ab36ea81841d1c95077630ab&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <!--2 круг-->
+            <div class="gallery_product col-sm-3 col-xs-12 filter FruglyBustard">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-65.userapi.com/impg/s-fYWLdUH534ryaGU-wNn1-0fRqRwWYC5Ykheg/MeFUh8w4iXs.jpg?size=1059x960&quality=96&proxy=1&sign=28eae2588277e7ed0da73c59d138b0b5&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-65.userapi.com/impg/s-fYWLdUH534ryaGU-wNn1-0fRqRwWYC5Ykheg/MeFUh8w4iXs.jpg?size=1059x960&quality=96&proxy=1&sign=28eae2588277e7ed0da73c59d138b0b5&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter Vitlut">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-7.userapi.com/impg/WXmrr_8omJz2Ytx9X8I9zrNmaN-HjWjGOzbS4Q/k5B1oDoyDiU.jpg?size=1280x896&quality=96&sign=5dbeca85dc9a6d227f9d445a0f7e3a98&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-7.userapi.com/impg/WXmrr_8omJz2Ytx9X8I9zrNmaN-HjWjGOzbS4Q/k5B1oDoyDiU.jpg?size=1280x896&quality=96&sign=5dbeca85dc9a6d227f9d445a0f7e3a98&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter SnowyBunny">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-13.userapi.com/impg/c856132/v856132194/22dc82/TZHbdXUoB0A.jpg?size=925x864&quality=96&proxy=1&sign=c0b923954849774734edddddb48e24e3&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-13.userapi.com/impg/c856132/v856132194/22dc82/TZHbdXUoB0A.jpg?size=925x864&quality=96&proxy=1&sign=c0b923954849774734edddddb48e24e3&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter Sidven">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-71.userapi.com/impf/c853428/v853428993/bcc12/YqYJCQFhQw0.jpg?size=1280x1179&quality=96&sign=b0f16b0c32c45ca6cc803648b60aacd2&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-71.userapi.com/impf/c853428/v853428993/bcc12/YqYJCQFhQw0.jpg?size=1280x1179&quality=96&sign=b0f16b0c32c45ca6cc803648b60aacd2&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter TakoYasi">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-74.userapi.com/impg/q_y6gCiP13qsHlNvK3L7g8OL1-pEIQCOWe-uGw/vh8lgGGAQGk.jpg?size=1280x1273&quality=96&proxy=1&sign=247b9f25fde9110e0a61c4e32a1fbd1a&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-74.userapi.com/impg/q_y6gCiP13qsHlNvK3L7g8OL1-pEIQCOWe-uGw/vh8lgGGAQGk.jpg?size=1280x1273&quality=96&proxy=1&sign=247b9f25fde9110e0a61c4e32a1fbd1a&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter azzka245">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-73.userapi.com/impg/Y_0gvtpXZzskHSfwGG5lTRHytUpXJjFuesX81g/q0RIhOuvDho.jpg?size=1280x1158&quality=96&sign=cafa4bbe096b73f2939345228b10a4b0&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-73.userapi.com/impg/Y_0gvtpXZzskHSfwGG5lTRHytUpXJjFuesX81g/q0RIhOuvDho.jpg?size=1280x1158&quality=96&sign=cafa4bbe096b73f2939345228b10a4b0&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <!--3круг-->
+            <div class="gallery_product col-sm-3 col-xs-12 filter FruglyBustard">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-16.userapi.com/impg/3pcIOfVNR3yDWAnNsBAQRS2I5Y2NqfD4fIdFDQ/iv0kiYW66RE.jpg?size=1280x782&quality=96&proxy=1&sign=3cf91544d29f22f716a0cb0a02e349be&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-16.userapi.com/impg/3pcIOfVNR3yDWAnNsBAQRS2I5Y2NqfD4fIdFDQ/iv0kiYW66RE.jpg?size=1280x782&quality=96&proxy=1&sign=3cf91544d29f22f716a0cb0a02e349be&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+             <div class="gallery_product col-sm-3 col-xs-12 filter Vitlut">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-67.userapi.com/impg/22vdrHcz2NtqD7v3zMJZGUXCnt1FVwbi796YHA/5s9dviUhapc.jpg?size=1280x1280&quality=96&sign=0c7ce1b10b43df5e0e63032d30110618&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-67.userapi.com/impg/22vdrHcz2NtqD7v3zMJZGUXCnt1FVwbi796YHA/5s9dviUhapc.jpg?size=1280x1280&quality=96&sign=0c7ce1b10b43df5e0e63032d30110618&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter SnowyBunny">
+                 <a class="fancybox" rel="ligthbox" href="https://sun9-26.userapi.com/impg/c856132/v856132194/22dcc2/K4sDBg8-mmE.jpg?size=900x813&quality=96&proxy=1&sign=d59d7c1a9e18a2179a6b9de780fd6b88&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-26.userapi.com/impg/c856132/v856132194/22dcc2/K4sDBg8-mmE.jpg?size=900x813&quality=96&proxy=1&sign=d59d7c1a9e18a2179a6b9de780fd6b88&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter Sidven">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-26.userapi.com/impf/c849528/v849528207/9e79f/tDs3XejgqGM.jpg?size=1022x1080&quality=96&proxy=1&sign=d8ace70633e084e8189d329ff7d86b13&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-26.userapi.com/impf/c849528/v849528207/9e79f/tDs3XejgqGM.jpg?size=1022x1080&quality=96&proxy=1&sign=d8ace70633e084e8189d329ff7d86b13&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+             <div class="gallery_product col-sm-3 col-xs-12 filter TakoYasi">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-11.userapi.com/impg/4V5druBKKoS1U9EQD9tsTR7kyKTBA3KECETuPw/HSr91AiRIeE.jpg?size=953x838&quality=96&proxy=1&sign=a6f74798f84d355914483d44279f7950&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-11.userapi.com/impg/4V5druBKKoS1U9EQD9tsTR7kyKTBA3KECETuPw/HSr91AiRIeE.jpg?size=953x838&quality=96&proxy=1&sign=a6f74798f84d355914483d44279f7950&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+             <div class="gallery_product col-sm-3 col-xs-12 filter azzka245">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-71.userapi.com/impg/qmiAM4Gm_jnE6uYSu9LWAN8PL1hf_R8kCUOFTg/lZEP3KA1k5M.jpg?size=1280x1197&quality=96&sign=7d2c99fbc4277fc4698f2fec313aa0f8&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-71.userapi.com/impg/qmiAM4Gm_jnE6uYSu9LWAN8PL1hf_R8kCUOFTg/lZEP3KA1k5M.jpg?size=1280x1197&quality=96&sign=7d2c99fbc4277fc4698f2fec313aa0f8&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <!--4 круг-->
+            <div class="gallery_product col-sm-3 col-xs-12 filter FruglyBustard">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-59.userapi.com/impg/GmXovuwJHZT3SlhC8IYew-MnqiUledZGaYyPmA/lBs37o6baAs.jpg?size=1080x1080&quality=96&proxy=1&sign=515326f2c31639ba57437fd9f3c94a30&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-59.userapi.com/impg/GmXovuwJHZT3SlhC8IYew-MnqiUledZGaYyPmA/lBs37o6baAs.jpg?size=1080x1080&quality=96&proxy=1&sign=515326f2c31639ba57437fd9f3c94a30&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter Vitlut">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-75.userapi.com/impg/JFDta9-WcaHWDyrWaSoAYJkOxVMfvZKid6IO7w/j2TNsMm04d0.jpg?size=1280x896&quality=96&sign=3eca61aff5ed37c446eda45fd8b6b26a&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-75.userapi.com/impg/JFDta9-WcaHWDyrWaSoAYJkOxVMfvZKid6IO7w/j2TNsMm04d0.jpg?size=1280x896&quality=96&sign=3eca61aff5ed37c446eda45fd8b6b26a&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter SnowyBunny">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-23.userapi.com/impg/c857216/v857216049/1ee2af/ibYUQJ2f5tA.jpg?size=958x834&quality=96&proxy=1&sign=2845357e1241de029f097ce05aff4981&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-23.userapi.com/impg/c857216/v857216049/1ee2af/ibYUQJ2f5tA.jpg?size=958x834&quality=96&proxy=1&sign=2845357e1241de029f097ce05aff4981&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter Sidven">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-18.userapi.com/impf/c857328/v857328997/26390/L1EX_hlO9YQ.jpg?size=1280x640&quality=96&sign=d5fee53ba95f8abf95f6c564ff4d3df3&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-18.userapi.com/impf/c857328/v857328997/26390/L1EX_hlO9YQ.jpg?size=1280x640&quality=96&sign=d5fee53ba95f8abf95f6c564ff4d3df3&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter TakoYasi">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-46.userapi.com/impg/I5ZCMLtw_O98VXGqwfF49uNI1bA_lwR20hoNtQ/AgXXD2zX8X8.jpg?size=1100x726&quality=96&proxy=1&sign=8d15654276189cc2800d636bf21afaaf&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-46.userapi.com/impg/I5ZCMLtw_O98VXGqwfF49uNI1bA_lwR20hoNtQ/AgXXD2zX8X8.jpg?size=1100x726&quality=96&proxy=1&sign=8d15654276189cc2800d636bf21afaaf&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery_product col-sm-3 col-xs-12 filter azzka245">
+                <a class="fancybox" rel="ligthbox" href="https://sun9-16.userapi.com/impg/igxj7iTTIa0xcsfyK5TfX-G2KZNAOuQI6tvXOQ/AoK37AYHe8Y.jpg?size=1080x810&quality=96&proxy=1&sign=576d8f171bc230f577e6972c44796d17&type=album">
+                    <img class="img-responsive img-gallery" alt="" src="https://sun9-16.userapi.com/impg/igxj7iTTIa0xcsfyK5TfX-G2KZNAOuQI6tvXOQ/AoK37AYHe8Y.jpg?size=1080x810&quality=96&proxy=1&sign=576d8f171bc230f577e6972c44796d17&type=album" />
+                    <div class='img-info'>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+            <!--ПРОЕКТЫ-->
             <div id="team-area" class="team-area pt-90 pb-70">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <div class="section-title">
                                 <h2>Наши проекты</h2>
-                                <p style="font-size: 16px;">Познакомьтесь с остальными проектами нашей большой семьи! <br>
-					Для перехода в группу нажмите на иконку VK, всплывающую при наведении!</p>
+                                <p style="font-size: 16px;">Познакомьтесь со всеми проектами нашей большой семьи!</p>
                             </div>
                         </div>
                     </div>
@@ -687,23 +493,8 @@
                                     </div>
                                 </div>
                                 <div class="team-info text-center">
-                                    <h3>Fat Anime & Girls Official Group™</h3>
+                                    <h3>Fat Anime Fun Group™</h3>
                                     <span style="font-size: 16px;">Главная группа</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="team-wrapper">
-                                <div class="team-member">
-                                    <img src="img/projects/fatpony.jpg" alt="" />
-                                    <div class="team-icon">
-                                        <a href="https://vk.com/fat_anime_pony" target="_blank" style="color:blue;"><i class="fa fa-vk"></i></a>
-                                        <span style="color: white;">Смотреть</span>
-                                    </div>
-                                </div>
-                                <div class="team-info text-center">
-                                    <h3>Fat Anime Pony™</h3>
-                                    <span style="font-size: 16px;">Группа по поням</span>
                                 </div>
                             </div>
                         </div>
@@ -755,6 +546,21 @@
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="team-wrapper">
                                 <div class="team-member">
+                                    <img src="img/projects/fatpony.jpg" alt="" />
+                                    <div class="team-icon">
+                                        <a href="https://vk.com/fat_anime_pony" target="_blank" style="color:blue;"><i class="fa fa-vk"></i></a>
+                                        <span style="color: white;">Смотреть</span>
+                                    </div>
+                                </div>
+                                <div class="team-info text-center">
+                                    <h3>Fat Anime Pony™</h3>
+                                    <span style="font-size: 16px;">Группа по поням</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="team-wrapper">
+                                <div class="team-member">
                                     <img src="img/projects/fatgirl.jpg" alt="" />
                                     <div class="team-icon">
                                     	<a href="https://vk.com/fatgirls_official" target="_blank"><i class="fa fa-vk" style="color:yellow;"></i></a><span style="color: white;">Смотреть</span>
@@ -769,6 +575,65 @@
                     </div>
                 </div>
             </div>
+			<!-- Партнеры-->
+			<div id="team-area" class="team-area pt-90 pb-70">
+			 <div class="container">
+				<div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="section-title">
+                                <h2>Наши партнеры</h2>
+                                <p style="font-size: 16px;">Познакомьтесь с дружественными группами и проектами!</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                    <section class="customer-logos slider pb-70">
+                        <div class="slide">
+                            <a href="https://vk.com/weight_gain" target="_blank">
+                                <img src="https://sun9-31.userapi.com/impg/V6kMOXMPaSwng41DkrIaV8iswJi3kedInAl6Wg/AAhlY16SNDA.jpg?size=761x856&quality=96&proxy=1&sign=7b8e0409ce453339cc4dd2fb4344d41c&type=album" alt="Weight Gain">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://vk.com/public25741927" target="_blank">
+                                <img src="https://sun9-50.userapi.com/impg/c857228/v857228633/e35af/M5RLs5hJWhs.jpg?size=393x431&quality=96&proxy=1&sign=a5bc83f09b6c8d65ddc5c4fabeec56f1&type=album" alt="Hyper Yiff">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://vk.com/public165021234" target="_blank">
+                                <img src="https://sun9-66.userapi.com/impg/7LJ81Ji3NaS9yJjY3i_8FeOXecDnKXap0EQabQ/iRTEyEffR44.jpg?size=1050x1080&quality=96&sign=cc33cf931736cb22856644b3a87c76b7&type=album" alt="Revolution Body">
+                            </a>
+                        </div>
+                        <div class="slide">
+                             <a href="https://vk.com/superpochaco" target="_blank">
+                            <img src="https://sun9-28.userapi.com/impg/AQBN8pi5CUHCe6PJE_zNDGbGU9Bf1bYRsXA3Hg/h2BbLW5dkvo.jpg?size=756x1080&quality=96&sign=c20e228073f91649814c0ed0d66c86bd&type=album" alt="Super Pochako">
+                            </a>
+                        </div>
+                        <div class="slide">
+                             <a href="https://vk.com/public170972924" target="_blank">
+                            <img src="https://sun9-16.userapi.com/impg/MqojW5F6TQrU62n7utcajtz1VxCbvf02GrmA9Q/PlnWKwiueJY.jpg?size=828x827&quality=96&proxy=1&sign=7d771c2e235f0531d0bdca892497a592&type=album" alt="Толстые Девушки">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://vk.com/bunnylab" target="_blank">
+                            <img src="https://sun9-63.userapi.com/impf/c854524/v854524913/44037/F8f0eL7agRg.jpg?size=669x696&quality=96&proxy=1&sign=6d001b265b1baf31610879edd1d401ae&type=album" alt="SnowyBunny">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="http://forfeed.ru/" target="_blank">
+                            <img src="https://sun9-9.userapi.com/impf/c849324/v849324041/179c39/8DESxZre8dg.jpg?size=1280x1280&quality=96&sign=3e23338b06a27f439f407f58676ffe30&type=album" alt="Forfeed">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://vk.com/debupocchari" target="_blank">
+                            <img src="https://sun9-6.userapi.com/impg/M4ZjSHoTvDm3Ps54XOyWoOGhLjjEgnGfryLqRw/TjWAxx7cBsU.jpg?size=711x1080&quality=96&sign=d9399ba9a5e97650d5894d609fdb8423&type=album" alt="DebuPocchari">
+                            </a>
+                        </div>
+   </section>
+                </div>
+            </div>
+
+            <!--НОВОСТИ-->
             <div id="blog-area" class="blog-area pb-100  pt-90 gray-bg">
                 <div class="container">
                     <div class="row">
@@ -782,6 +647,30 @@
                     <div class="row">
                         <div class="blog-active">
                         	<!--1-->
+							<div class="col-md-4 col-sm-4">
+								<div class="blog-text">
+									<div class="blog-img">
+                                            <img src="img/blog/4.jpg" alt="">
+                                        </div>
+                                    <div class="blog-info">
+                                        <div class="blog-meta">
+                                            <span>
+                                                <i class="fa fa-user"></i>
+                                                Админ
+                                            </span>
+                                            <span>
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                31 Января  2021
+                                            </span>
+                                        </div>
+                                        <h3><a href="https://vk.com/@fatanime-plany-na-2020-god" target="_blank">Шестилетие группы</a></h3>
+                                        <p>Нашей группе исполнилось 6 лет! Я, как админ, считаю, что это весьма большая цифра и то, что мы до сих пор радуем вас всем редакторским составом новыми работами, говорит о том, что наша группа для фанатов полных аниме будет жить еще долго....</p>
+                                        <a href="https://vk.com/feed?section=search&q=%23fatanime_6years" target="_blank">Читать далее</a>
+                                    </div>
+                                </div>
+                            </div>
+
+							<!--2-->
                             <div class="col-md-4 col-sm-4">
                                 <div class="blog-text">
                                     <div class="blog-img">
@@ -805,7 +694,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--2-->
+                            <!--3-->
                             <div class="col-md-4 col-sm-4">
                                 <div class="blog-text">
                                     <div class="blog-img">
@@ -821,10 +710,6 @@
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                                 29 Июня  2019
                                             </span>
-                                            <!--<span>
-                                                <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                                <a href="#">1 comment</a>
-                                            </span>-->
                                         </div>
                                         <h3><a href="https://vk.com/@fatanime-tvorchestvo-po-teme-fanfiki" target="_blank">Творчество по теме. Фанфики.</a></h3>
                                         <p>Историю можно придумать про что угодно. <br>Ни для кого не секрет, что на просторах интернета существуют истории связанные с набором веса,фидеризмом, надуванием и прочим контентом. Назовем это все обобщенно фэт-литература...</p>
@@ -832,7 +717,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--3-->
+                            <!--4-->
                             <div class="col-md-4 col-sm-4">
                                 <div class="blog-text">
                                     <div class="blog-img">
@@ -859,43 +744,19 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="testimonial-area ptb-100 bg-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <div class="testimonial-active">
-                                <div class="single-testimonial">
-                                    <img src="img/banner/2.jpg" alt="">
-                                    <h3>SHUVO IYAN / CEO</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  <br>minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
-                                </div>
-                                <div class="single-testimonial">
-                                    <img src="img/banner/3.jpg" alt="">
-                                    <h3>TAYEB RAYED / CEO</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  <br>minim veniam, quis nostrud exercitation ullamco </p>
-                                </div>
-                                <div class="single-testimonial">
-                                    <img src="img/banner/2.jpg" alt="">
-                                    <h3>ROBIUL SIDDIKEE / CEO</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  <br>minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
+
             <div id="contact-area" class="contact-area pt-90 pb-70 bg-img-3">
                 <div class="container">
                    <div class="row">
                         <div class="col-md-12 text-center">
                             <div class="section-title">
                                 <h2>Связаться с создателем сайта</h2>
-                                <p style="font-size: 18px;">Есть вопросы? Идеи? Предложения? Пишите!</p>
+                                <p style="font-size: 18px;">Есть вопросы? Идеи? Предложения? <br>Пишите!</p>
                             </div>
                         </div>
                         <div class="col-md-12 col-sm-12">
                             <div class="single-contact-option text-center nn-mrg">
-                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:fatanime@yandex.ru"><i class="fa fa-envelope icon-mail"></i></a>
                                 <h4>Написать письмо</h4>
                                 <a href="mailto:fatanime@yandex.ru" style="font-size: 
                                 20px;">fatanime@yandex.ru</a>
@@ -914,18 +775,6 @@
                                 <div class="footer-logo" style="margin-top: 10px;">
                                     <a href="https://vk.com/fatanime" target="_blank" style="font-size: 20px;">FA&GOG</a>
                                 </div>
-                                <div class="footer-address">
-                                    <div class="footer-top-info">
-                                        <ul>
-                                            <li class="res-mrg">
-                                                <a href="mailto:fatanime@yandex.ru" style="font-size: 16px;">
-                                                    <i class="fa fa-envelope"></i>
-                                                    fatanime@yandex.ru
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="col-md-12 text-center">
@@ -935,7 +784,8 @@
                                         <i class="fa fa-vk"></i>
                                     </a>
                                 </div>
-                                <p style="font-size: 16px;">Copyright © 2020 <a href="https://vk.com/fatanime">FA&GOG</a>, All Rights Reserved.</p>
+                                <p style="font-size: 16px;">Copyright © 2021 <a href="https://vk.com/fatanime">FA&GOG</a>.<br> All Rights Reserved.</p>
+                                <p style="font-size: 11px;">В качестве примеров в слайдере использованы работы известных художников из сети Deviantart: <a href="https://www.deviantart.com/miramiraclerun/art/Wider-674504361">miramiraclerun</a>, <a href="https://www.deviantart.com/pixiveo/art/Elesa-s-Shocking-Gain-832766471">pixiveo</a>,<a href="https://www.deviantart.com/ashgallalla/art/Paz-799568906"> ashgallalla</a></p>
                             </div>
                         </div>
                     </div>
@@ -950,14 +800,37 @@
 		<!-- jquery
 		============================================ -->		
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
-		<!-- bootstrap JS
+		<!-- bootstrap JS, Fancybox
 		============================================ -->		
         <script src="js/bootstrap.min.js"></script>
-        <!-- ajax mails JS
-        ============================================ -->
-        <script src="js/ajax-mail.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 		<!-- plugins JS
-		============================================ -->		
+		============================================ -->	
+		<script>
+			$(document).ready(function(){
+				$('.customer-logos').slick({
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 1500,
+					arrows: false,
+					dots: false,
+					pauseOnHover: false,
+					responsive: [{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 4
+						}
+					}, {
+						breakpoint: 520,
+						settings: {
+							slidesToShow: 3
+						}
+					}]
+				});
+			});
+		</script>
         <script src="js/plugins.js"></script>
 		<!-- main JS
 		============================================ -->		
