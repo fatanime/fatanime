@@ -747,7 +747,7 @@ tag-padding
 .team-icon > a {
     border: 1px solid transparent;
     color: #fff;
-    display: inline-block;
+    display: contents;
     font-size: 15px;
     height: 30px;
     line-height: 30px;
@@ -757,6 +757,7 @@ tag-padding
     visibility: hidden;
     width: 30px;
 }
+
 .team-wrapper:hover .team-icon > a {
     opacity: 1;
     visibility: visible;
