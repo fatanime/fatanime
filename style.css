@@ -1813,7 +1813,8 @@ a.button2:active {
   text-align:justify;
   font-family: "MockFlowFont"; 
   width: 100%;  
-}
+}    
+
 a.button3, a.button3:before {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -1839,6 +1840,20 @@ a.button3 {
 a.button3:hover{
     border: 1px solid #0766d8;
     color: #0766d8;
+}
+@media (min-width:990px){
+	.card__title{
+	font-size:24px;
+	}
+	.card__tagline{
+	font-size:18px;
+	}
+	.card__description{
+	font-size:20px;
+	}
+	a.button3{
+	font-size:18px;
+	}
 }
 @media (max-width:990px){
 	.card__title{
