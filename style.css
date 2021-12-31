@@ -1778,7 +1778,7 @@ a.button2:active {
     }
     .card-container
     { 
-        margin: 40px;
+        margin: 40px 0 40px 0px;
     }
 }
 
@@ -1863,9 +1863,12 @@ a.button3:hover{
 	font-size:16px;
 	}
 	.card__description{
-	font-size:13px;
+	font-size:15px;
+    padding: 15px;
 	}
 	a.button3{
 	font-size:13px;
+    margin-top: 0px;
+    min-width: 100px;
 	}
 }
