@@ -246,6 +246,7 @@ let card_17 = document.querySelector(".card-17");
 let card_18 = document.querySelector(".card-18");
 let card_19 = document.querySelector(".card-19");
 let card_20 = document.querySelector(".card-20");
+let card_21 = document.querySelector(".card-21");
 var playing = false;
 
 card_1.addEventListener('click',function() {
@@ -578,6 +579,23 @@ card_20.addEventListener('click',function() {
 playing = true;
 anime({
     targets: card_20,
+    scale: [{value: 1}, {value: 1.1}, {value: 1, delay: 250}],
+    rotateY: {value: '+=180', delay: 200},
+    easing: 'easeInOutSine',
+    duration: 400,
+    complete: function(anim){
+     playing = false;
+ }
+});
+});
+
+card_21.addEventListener('click',function() {
+  if(playing)
+    return;
+
+playing = true;
+anime({
+    targets: card_21,
     scale: [{value: 1}, {value: 1.1}, {value: 1, delay: 250}],
     rotateY: {value: '+=180', delay: 200},
     easing: 'easeInOutSine',
